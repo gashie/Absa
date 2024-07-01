@@ -1,7 +1,6 @@
 const asynHandler = require("../../middleware/async");
 const { sendResponse, CatchHistory } = require("../../helper/utilfunc");
 const GlobalModel = require("../../model/Global");
-const { ShowRolePermissions } = require("../../model/Account");
 const systemDate = new Date().toISOString().slice(0, 19).replace("T", " ");
 
 exports.CreateAdmin = asynHandler(async (req, res, next) => {

@@ -43,7 +43,7 @@ app.use(function (req, res, next) {
 })
 
 //Mount routes
-app.use("/api/v1/qms/static", routes);
+app.use("/api/v1/absa", routes);
 
 app.use(errorHandler);
 
